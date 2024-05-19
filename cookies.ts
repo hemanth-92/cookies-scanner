@@ -1,4 +1,4 @@
-import { chromium, firefox } from "playwright";
+const { firefox } = require("playwright");
 (async () => {
   const browser = await firefox.launch();
   const context = await browser.newContext();
